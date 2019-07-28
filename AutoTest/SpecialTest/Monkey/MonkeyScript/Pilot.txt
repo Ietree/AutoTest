@@ -1,0 +1,28 @@
+#头文件信息
+
+type = raw events
+
+count = 1
+
+speed = 1.0
+
+#启动测试
+start data >>
+
+#1、启动App
+LaunchActivity(com.dji.industry.pilot.SplashActivity)
+UserWait(2000)
+
+#2、点击用户名输入框
+Tap(800, 460, 1000)
+DispatchString(123@dji.com)
+UserWait(2000)
+
+#3、点击密码输入框
+Tap(800, 600, 1000)
+DispatchString(123456)
+UserWait(2000)
+
+#4、点击登录按钮
+Tap(2060, 90, 1000)
+
